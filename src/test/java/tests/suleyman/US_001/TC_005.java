@@ -26,7 +26,7 @@ public class TC_005 extends TestBaseRapor {
     public void us001_TC005() {
 
         page = new PearlyMarketPageSuleyman();
-        extentTest = extentReports.createTest("us001_TC005", "Email unique olmali(Kayitli Email ile register olmamali)");
+        extentTest = extentReports.createTest("US001_TC005 Negatif Test", "Email unique olmali(Kayitli Email ile register olmamali)");
 
         Driver.getDriver().get(ConfigReader.getProperty("projeUrl"));
         extentTest.info("https://pearlymarket.com/ url'e gider");
@@ -57,7 +57,7 @@ public class TC_005 extends TestBaseRapor {
         String actualText = page.emailAlreadyExistsText.getText();
         Assert.assertEquals(actualText, expectedText);
         extentTest.info("This Email already exists. Please login to the site and apply as vendor. uyarisinin gorundugunu dogrular");
-        extentTest.pass("us001-TC005 bitti");
+        extentTest.pass("US001-TC005 bitti");
 
         ReusableMethods.waitFor(2);
         Driver.getDriver().quit();

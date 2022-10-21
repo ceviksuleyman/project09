@@ -24,7 +24,7 @@ public class TC_003_004 extends TestBaseRapor {
 
     //1 - vendor https://pearlymarket.com/ sayfasina gider
     //2 - Anasayfanin basariyla gorunur oldugunu dogrular
-    //3 -  Register butonuna tiklar
+    //3 - Register butonuna tiklar
     //4 - Acilan pencerede Becamo a vendor butonuna tiklayin
     //5 - Gecersiz bir email adresi girer
     //7 - Dogrulama kodu gonderildi email uyarisinin gorundugunu dogrular
@@ -37,7 +37,7 @@ public class TC_003_004 extends TestBaseRapor {
 
         page = new PearlyMarketPageSuleyman();
 
-        extentTest = extentReports.createTest("TC003", "Email bos birakilamaz ve gecerli bir email olmali");
+        extentTest = extentReports.createTest("US001_TC003 Negatif Test", "Email bos birakilamaz ve gecerli bir email olmali");
 
         Driver.getDriver().get(ConfigReader.getProperty("projeUrl"));
         extentTest.info("vendor https://pearlymarket.com/");
@@ -72,7 +72,7 @@ public class TC_003_004 extends TestBaseRapor {
     public void us001_TC004() {
 
         page = new PearlyMarketPageSuleyman();
-        extentTest = extentReports.createTest("TC004", "Email bos birakilamaz ve gecerli bir email olmali");
+        extentTest = extentReports.createTest("US001_TC004 Negatif Test", "Email bos birakilamaz ve gecerli bir email olmali");
 
         Driver.getDriver().get(ConfigReader.getProperty("projeUrl"));
         extentTest.info("vendor https://pearlymarket.com/");

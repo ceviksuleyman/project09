@@ -8,10 +8,11 @@ import tests.methods.VerificationCode;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
+import utilities.TestBaseRapor;
 
 import java.io.IOException;
 
-public class TC_006_007_008 {
+public class TC_006_007_008 extends TestBaseRapor {
 
     //TC006 TC007 TC008
     //1 - vendor https://pearlymarket.com/ sayfasina gider
@@ -36,32 +37,41 @@ public class TC_006_007_008 {
 
     @Test(dataProvider = "gecersizSifreler")
     public void us001_TC006_007_008(String password, String confirmPassword) {
+
         page = new PearlyMarketPageSuleyman();
+        extentTest = extentReports.createTest("US001_TC006_TC007_TC008 Negatif Test","Vendor gecersiz sifre  ile kayit olmamali");
 
         Driver.getDriver().get(ConfigReader.getProperty("projeUrl"));
+        extentTest.info("https://pearlymarket.com/ url'e gider");
 
         page.registerHomePage.click();
+        extentTest.info("Register link'ine tiklar");
 
         page.becomeAVendor.click();
+        extentTest.info("Acilan pencerede Become a Vendor'a gider");
 
         Assert.assertTrue(page.registerEmailBox.isDisplayed()
                 && page.registerPasswordBox.isDisplayed()
                 && page.registerConfirmPwdBox.isDisplayed());
-
+        extentTest.info("Register sayfasinda email,password ,confirm password'un gorundugunu dogrular");
 
         VerificationCode.getEmailCode();
+        extentTest.info("Email ve email'e gelen dogrulama kodunu girer");
 
         page.registerPasswordBox.sendKeys(password);
         page.registerConfirmPwdBox.sendKeys(confirmPassword);
+        extentTest.info("Gecersiz bir sifre ile password ve confirm password ayni olarak girer");
 
 
         page.registerButton.click();
+        extentTest.info("Register button'a tiklar");
 
 
         ReusableMethods.waitFor(2);
         String expectedText = "Password strength should be atleast \"Good\".";
         String actualText = page.weakPasswordText.getText();
         Assert.assertEquals(actualText, expectedText);
+        extentTest.info("Password strength should be atleast \"Good\". uyarisinin gorundugunu dogrular");
 
         try {
             ReusableMethods.getScreenshotWebElement("TC006-TC007-TC008-GecersizSifre", page.weakPasswordText);
@@ -70,6 +80,7 @@ public class TC_006_007_008 {
         }
 
         ReusableMethods.waitFor(2);
+        extentTest.pass("Gecersiz sifrelerle register negatif test bitti");
 
         Driver.quitDriver();
     }
