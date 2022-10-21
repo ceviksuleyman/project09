@@ -17,7 +17,7 @@ public class US007TC008 {// Brand Negatif Test
     5	Store Manager Media Libraryden eklenecek foto secilir Select butonuna tiklar
     6	Store Manager Media Libraryden eklenecek  diger foto secilir ve Add to Gallary botununa tiklar
     7	Store Manager Submit butonuna tiklar
-    8	Store Manager "Product Successfully Published." yazisini gorur
+    8	Store Manager "Please insert Product Title before submit." yazisini gorur
      */
     PearlyMarketPageAkin page;
     @Test
