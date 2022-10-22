@@ -36,7 +36,7 @@ public class TC_006_007_008 extends TestBaseRapor {
 
 
     @Test(dataProvider = "gecersizSifreler")
-    public void us001_TC006_007_008(String password, String confirmPassword) {
+    public void US001_TC006_007_008(String password, String confirmPassword) {
 
         page = new PearlyMarketPageSuleyman();
         extentTest = extentReports.createTest("US001_TC006_TC007_TC008 Negatif Test","Vendor gecersiz sifre  ile kayit olmamali");

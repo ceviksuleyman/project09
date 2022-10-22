@@ -18,7 +18,7 @@ public class TC_007_008_009_010_011_012 {
     PearlyMarketPageSuleyman page;
 
     @Test(priority = 1)
-    public void us022_TC007() throws IOException {
+    public void US022_TC007() throws IOException {
 
         page = new PearlyMarketPageSuleyman();
 
@@ -32,8 +32,8 @@ public class TC_007_008_009_010_011_012 {
         ReusableMethods.getScreenshot("Trendinglowtohigh");
     }
 
-    @Test(dependsOnMethods = "us022_TC007")
-    public void us022_TC008() throws IOException {
+    @Test(dependsOnMethods = "US022_TC007")
+    public void US022_TC008() throws IOException {
 
         page = new PearlyMarketPageSuleyman();
 
@@ -45,7 +45,7 @@ public class TC_007_008_009_010_011_012 {
     }
 
     @Test(priority = 2)
-    public void us022_TC009() throws IOException {
+    public void US022_TC009() throws IOException {
 
         page = new PearlyMarketPageSuleyman();
 
@@ -59,8 +59,8 @@ public class TC_007_008_009_010_011_012 {
         ReusableMethods.getScreenshot("NewArrivalslowtohigh");
     }
 
-    @Test(dependsOnMethods = "us022_TC009")
-    public void us022_TC010() throws IOException {
+    @Test(dependsOnMethods = "US022_TC009")
+    public void US022_TC010() throws IOException {
 
         page = new PearlyMarketPageSuleyman();
 
@@ -72,7 +72,7 @@ public class TC_007_008_009_010_011_012 {
     }
 
     @Test(priority = 3)
-    public void us022_TC011() throws IOException {
+    public void US022_TC011() throws IOException {
 
         page = new PearlyMarketPageSuleyman();
 
@@ -86,8 +86,8 @@ public class TC_007_008_009_010_011_012 {
         ReusableMethods.getScreenshot("BestSellerlowtohigh");
     }
 
-    @Test(dependsOnMethods = "us022_TC011")
-    public void us022_TC012() throws IOException {
+    @Test(dependsOnMethods = "US022_TC011")
+    public void US022_TC012() throws IOException {
 
         page = new PearlyMarketPageSuleyman();
 
