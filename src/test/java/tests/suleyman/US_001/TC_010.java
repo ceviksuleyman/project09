@@ -20,13 +20,13 @@ public class TC_010 extends TestBaseRapor {
     //7 - Email uzerinden hesabi onaylar
     //8 - Acilan sekmede https://pearlymarket.com/ url'e gidildigini dogrular.
 
-    PearlyMarketPageSuleyman page = new PearlyMarketPageSuleyman();
+    PearlyMarketPageSuleyman page;
 
     @Test
     public void us001_TC010() {
 
-
-        extentTest = extentReports.createTest("TC007","Email uzerinden account onaylanmalı");
+        page = new PearlyMarketPageSuleyman();
+        extentTest = extentReports.createTest("US001_TC010", "Email uzerinden account onaylanmalı");
 
         Driver.getDriver().get(ConfigReader.getProperty("projeUrl"));
         extentTest.info("https://pearlymarket.com/ url'e gider");
@@ -44,7 +44,6 @@ public class TC_010 extends TestBaseRapor {
         extentTest.info("password ve confirm password girer");
         extentTest.info("Register butona tiklar");
         extentTest.info("Email'e gelen register onay linkine tiklar");
-
 
 
         String expectedUrl = "https://pearlymarket.com/";

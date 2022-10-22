@@ -42,7 +42,7 @@ public class TC_001_004_002_005_003_006 {
     public static final String ANSI_GREEN = "\u001B[32m";
 
     @Test(priority = 1)
-    public void us022_TC001() throws IOException {
+    public void US022_TC001() throws IOException {
 
         page = new PearlyMarketPageSuleyman();
 
@@ -57,8 +57,8 @@ public class TC_001_004_002_005_003_006 {
 
     }
 
-    @Test(dependsOnMethods = "us022_TC001")
-    public void us022_TC004() throws IOException {
+    @Test(dependsOnMethods = "US022_TC001")
+    public void US022_TC004() throws IOException {
 
         page = new PearlyMarketPageSuleyman();
 
@@ -85,7 +85,7 @@ public class TC_001_004_002_005_003_006 {
     }
 
     @Test(priority = 2)
-    public void us022_TC002() throws IOException {
+    public void US022_TC002() throws IOException {
 
         page = new PearlyMarketPageSuleyman();
 
@@ -101,8 +101,8 @@ public class TC_001_004_002_005_003_006 {
 
     }
 
-    @Test(dependsOnMethods = "us022_TC002")
-    public void us022_TC005() throws IOException {
+    @Test(dependsOnMethods = "US022_TC002")
+    public void US022_TC005() throws IOException {
 
         page = new PearlyMarketPageSuleyman();
 
@@ -130,7 +130,7 @@ public class TC_001_004_002_005_003_006 {
 
 
     @Test(priority = 3)
-    public void us022_TC003() throws IOException {
+    public void US022_TC003() throws IOException {
 
         page = new PearlyMarketPageSuleyman();
 
@@ -146,8 +146,8 @@ public class TC_001_004_002_005_003_006 {
     }
 
 
-    @Test(dependsOnMethods = "us022_TC003")
-    public void us022_TC006() throws IOException {
+    @Test(dependsOnMethods = "US022_TC003")
+    public void US022_TC006() throws IOException {
 
         page = new PearlyMarketPageSuleyman();
 
