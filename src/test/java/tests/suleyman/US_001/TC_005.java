@@ -23,7 +23,7 @@ public class TC_005 extends TestBaseRapor {
     PearlyMarketPageSuleyman page;
 
     @Test(groups = "negatif")
-    public void us001_TC005() {
+    public void US001_TC005() {
 
         page = new PearlyMarketPageSuleyman();
         extentTest = extentReports.createTest("US001_TC005 Negatif Test", "Email unique olmali(Kayitli Email ile register olmamali)");

@@ -33,7 +33,7 @@ public class TC_003_004 extends TestBaseRapor {
     PearlyMarketPageSuleyman page;
 
     @Test(groups = "negatif")
-    public void us001_TC003() {
+    public void US001_TC003() {
 
         page = new PearlyMarketPageSuleyman();
 
@@ -68,8 +68,8 @@ public class TC_003_004 extends TestBaseRapor {
         extentTest.pass("Test TC003 bitti");
     }
 
-    @Test(dependsOnMethods = "us001_TC003")
-    public void us001_TC004() {
+    @Test(dependsOnMethods = "US001_TC003")
+    public void US001_TC004() {
 
         page = new PearlyMarketPageSuleyman();
         extentTest = extentReports.createTest("US001_TC004 Negatif Test", "Email bos birakilamaz ve gecerli bir email olmali");

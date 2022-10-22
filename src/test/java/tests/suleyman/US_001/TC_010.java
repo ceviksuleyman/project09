@@ -23,7 +23,7 @@ public class TC_010 extends TestBaseRapor {
     PearlyMarketPageSuleyman page;
 
     @Test
-    public void us001_TC010() {
+    public void US001_TC010() {
 
         page = new PearlyMarketPageSuleyman();
         extentTest = extentReports.createTest("US001_TC010", "Email uzerinden account onaylanmalı");

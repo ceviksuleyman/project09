@@ -23,7 +23,7 @@ public class TC_009 {
     PearlyMarketPageSuleyman page;
 
     @Test
-    public void us001_TC007() throws IOException {
+    public void US001_TC009() throws IOException {
 
         page = new PearlyMarketPageSuleyman();
 

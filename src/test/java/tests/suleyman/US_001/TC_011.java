@@ -27,7 +27,7 @@ public class TC_011 extends TestBaseRapor {
     PearlyMarketPageSuleyman page;
 
     @Test
-    public void us001_TC11() {
+    public void US001_TC11() {
         extentTest = extentReports.createTest("TC011", "Vendor olarak Register");
         page = new PearlyMarketPageSuleyman();
 
