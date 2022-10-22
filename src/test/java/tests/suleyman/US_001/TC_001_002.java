@@ -55,10 +55,8 @@ public class TC_001_002 extends TestBaseRapor {
         extentTest = extentReports.createTest("TC002",
                 "Registration sayfasında uc özellik olmalı; email, password, confirm password");
 
-        //become a vendor clikk
         ReusableMethods.jsScrollClick(page.becomeAVendor);
         extentTest.info("Become vendor butonuna tiklar");
-
 
         Assert.assertTrue(page.registerEmailBox.isDisplayed()
                 && page.registerPasswordBox.isDisplayed()
