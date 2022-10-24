@@ -5,8 +5,9 @@ import org.testng.annotations.Test;
 import pages.PearlyMarketPageAkin;
 import tests.methods.Login;
 import utilities.ReusableMethods;
+import utilities.TestBaseRapor;
 
-public class US005TC001 {//Products'ta urun listemi görmeliyim; status, stock, price, date
+public class US005TC001 extends TestBaseRapor {//Products'ta urun listemi görmeliyim; status, stock, price, date
        /*
         1	Store Manager  https://pearlymarket.com/ adresine gider
         2	Store Manager Sign-in sekmesine tiklar
@@ -22,15 +23,21 @@ public class US005TC001 {//Products'ta urun listemi görmeliyim; status, stock, 
 
     @Test
     public void US005TC001() {
+        extentTest=extentReports.createTest("Products'ta urun listeleme","Products'ta urun listemi görmeliyim; status, stock, price, date");
+
         page = new PearlyMarketPageAkin();
         Login.login();
+        extentTest.info("Login olundu");
         page.signOutButton.click();
         ReusableMethods.jsScrollClick(page.storeManager);
+        extentTest.info("StoreManager 'a gidildi");
         ReusableMethods.jsScrollClick(page.products);
+        extentTest.info("Products 'a gidildi");
         Assert.assertTrue(page.statusBaslik.isDisplayed()
                 && page.stockBaslik.isDisplayed()
                 && page.priceBaslik.isDisplayed()
                 && page.dateBaslik.isDisplayed());
+        extentTest.pass("status, stock, price, date basliklari goruldu");
 
     }
 }
