@@ -47,7 +47,7 @@ public class TC_002_003_004 extends TestBaseRapor {
                 {ConfigReader.getProperty("wrongEmail"), ConfigReader.getProperty("wrongPassword")}};
     }
 
-    @Test(dataProvider = "gecersizGirisBilgileri")
+    @Test(dataProvider = "gecersizGirisBilgileri", groups = "negatif")
     public void negativeLogin(String email, String password) {
 
         page = new PearlyMarketPageSuleyman();
@@ -79,7 +79,7 @@ public class TC_002_003_004 extends TestBaseRapor {
     @Test(dependsOnMethods = "negativeLogin")
     public void testClose() {
 
-       Driver.quitDriver();
+        Driver.quitDriver();
     }
 
 }
