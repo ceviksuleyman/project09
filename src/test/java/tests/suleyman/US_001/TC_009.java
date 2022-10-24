@@ -22,7 +22,7 @@ public class TC_009 {
 
     PearlyMarketPageSuleyman page;
 
-    @Test
+    @Test(groups = "negatif")
     public void US001_TC009() throws IOException {
 
         page = new PearlyMarketPageSuleyman();

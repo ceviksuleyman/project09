@@ -35,11 +35,11 @@ public class TC_006_007_008 extends TestBaseRapor {
     }
 
 
-    @Test(dataProvider = "gecersizSifreler")
+    @Test(dataProvider = "gecersizSifreler", groups = "negatif")
     public void US001_TC006_007_008(String password, String confirmPassword) {
 
         page = new PearlyMarketPageSuleyman();
-        extentTest = extentReports.createTest("US001_TC006_TC007_TC008 Negatif Test","Vendor gecersiz sifre  ile kayit olmamali");
+        extentTest = extentReports.createTest("US001_TC006_TC007_TC008 Negatif Test", "Vendor gecersiz sifre  ile kayit olmamali");
 
         Driver.getDriver().get(ConfigReader.getProperty("projeUrl"));
         extentTest.info("https://pearlymarket.com/ url'e gider");

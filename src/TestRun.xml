@@ -6,4 +6,10 @@
             <class name="tests.suleyman.US_002.TC_001"/>
         </classes>
     </test>
+
+    <test name="Package">
+        <packages>
+            <package name="tests.suleyman.US_022"/>
+        </packages>
+    </test>
 </suite>
