@@ -133,6 +133,6 @@ public class TC_005_006_007 extends TestBaseRapor {
         extentTest.info("Support Tickets, Followings, Logout gorundugunu dogrular");
         extentTest.pass("US002_TC007 test bitti");
 
-        Driver.getDriver().quit();
+        Driver.quitDriver();
     }
 }

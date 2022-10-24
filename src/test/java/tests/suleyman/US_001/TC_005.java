@@ -60,6 +60,6 @@ public class TC_005 extends TestBaseRapor {
         extentTest.pass("US001-TC005 bitti");
 
         ReusableMethods.waitFor(2);
-        Driver.getDriver().quit();
+        Driver.quitDriver();
     }
 }

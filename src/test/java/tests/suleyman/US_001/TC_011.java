@@ -88,6 +88,6 @@ public class TC_011 extends TestBaseRapor {
         extentTest.pass("Log out'a tiklae giris sayfasina gidildigini dogrular.");
 
         ReusableMethods.waitFor(2);
-        Driver.getDriver().quit();
+        Driver.quitDriver();
     }
 }

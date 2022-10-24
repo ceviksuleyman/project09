@@ -99,7 +99,7 @@ public class TC_007_008_009_010_011_012 {
         ReusableMethods.getScreenshot("BestSellerhightolow");
 
         ReusableMethods.waitFor(2);
-        Driver.getDriver().quit();
+        Driver.quitDriver();
     }
 
 }

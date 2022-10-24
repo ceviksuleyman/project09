@@ -199,6 +199,6 @@ public class TC_001_004_002_005_003_006 extends TestBaseRapor {
         extentTest.info("Best seller sort by'dan herhangi biri secildi ve sort by kategorisi konsolda yazdirir");
         extentTest.pass("US022_TC001-TC002-TC003-TC004-TC005-TC006");
         ReusableMethods.waitFor(2);
-        Driver.getDriver().quit();
+        Driver.quitDriver();
     }
 }
