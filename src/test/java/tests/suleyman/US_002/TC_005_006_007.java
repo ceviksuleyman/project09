@@ -65,7 +65,6 @@ public class TC_005_006_007 extends TestBaseRapor {
         Login.login();
         extentTest.info("Vendor login olur");
 
-
         ReusableMethods.jsScrollClick(page.myAccountLink);
         extentTest.info("My Account linkine gider");
 
@@ -89,8 +88,8 @@ public class TC_005_006_007 extends TestBaseRapor {
         extentTest.pass("US002 TC005 test bitti");
     }
 
-    int i;
 
+    int i;
     List<String> expectedList = new ArrayList<>(
             Arrays.asList("Store Manager", "Orders", "Downloads", "Addresses", "Account details", "Wishlist"));
 
@@ -114,7 +113,6 @@ public class TC_005_006_007 extends TestBaseRapor {
 
     List<String> expectedList2 = new ArrayList<>(
             Arrays.asList("Support Tickets", "Followings", "Logout"));
-
     @Test(dependsOnMethods = "US002_TC006")
     public void US002_TC007() throws IOException {
 
