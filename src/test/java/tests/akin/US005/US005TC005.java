@@ -34,8 +34,8 @@ public class US005TC005 {//Kisa tanımlama ve geniş tanımlama (short descripti
         page = new PearlyMarketPageAkin();
         Login.login();
         page.signOutButton.click();
-        page.storeManager.click();
-        page.products.click();
+        ReusableMethods.jsScrollClick(page.storeManager);
+        ReusableMethods.jsScrollClick(page.products);
         page.addNewButton.click();
         page.productTitle.sendKeys("car");
         page.priceGirisi.sendKeys("800000");

@@ -21,8 +21,8 @@ public class US006TC007 {//Kozmetik & kisisel kategorisini belirlenebilmeli
         page = new PearlyMarketPageAkin();
         Login.login();
         page.signOutButton.click();
-        page.storeManager.click();
-        page.products.click();
+        ReusableMethods.jsScrollClick(page.storeManager);
+        ReusableMethods.jsScrollClick(page.products);
         page.addNewButton.click();
         ReusableMethods.jsScrollClick(page.KozmetikKisisel);
         Assert.assertTrue(page.KozmetikKisisel.isEnabled());

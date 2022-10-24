@@ -26,8 +26,8 @@ public class US007TC008 {// Brand Negatif Test
         page = new PearlyMarketPageAkin();
         Login.login();
         page.signOutButton.click();
-        page.storeManager.click();
-        page.products.click();
+        ReusableMethods.jsScrollClick(page.storeManager);
+        ReusableMethods.jsScrollClick(page.products);
         page.addNewButton.click();
         ReusableMethods.jsScrollClick(page.fotoEkleme1);
         page.mediaLibrary.click();

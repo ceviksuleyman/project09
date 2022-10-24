@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.PearlyMarketPageAkin;
 import tests.methods.Login;
+import utilities.ReusableMethods;
 
 public class US005TC003 {//Urun ismi ekle  product title, satis Fiyati
     /*
@@ -21,8 +22,8 @@ public class US005TC003 {//Urun ismi ekle  product title, satis Fiyati
         page = new PearlyMarketPageAkin();
         Login.login();
         page.signOutButton.click();
-        page.storeManager.click();
-        page.products.click();
+        ReusableMethods.jsScrollClick(page.storeManager);
+        ReusableMethods.jsScrollClick(page.products);
         page.addNewButton.click();
         page.productTitle.sendKeys("Xiaomi");
         page.priceGirisi.sendKeys("800");

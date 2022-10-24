@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.PearlyMarketPageAkin;
 import tests.methods.Login;
+import utilities.ReusableMethods;
 
 public class US005TC002 {//Yeni urun ekle (Add new); urun icin virtual veya downloadable secenegi olmali
     /*
@@ -18,8 +19,8 @@ public class US005TC002 {//Yeni urun ekle (Add new); urun icin virtual veya down
         page = new PearlyMarketPageAkin();
         Login.login();
         page.signOutButton.click();
-        page.storeManager.click();
-        page.products.click();
+        ReusableMethods.jsScrollClick(page.storeManager);
+        ReusableMethods.jsScrollClick(page.products);
         page.addNewButton.click();
         Assert.assertTrue(page.virtualClick.isDisplayed() && page.downloadableClick.isDisplayed());
 

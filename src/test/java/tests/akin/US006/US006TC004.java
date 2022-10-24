@@ -21,8 +21,8 @@ public class US006TC004 {//Ev & yasam kategorisini belirlenebilmeli
         page = new PearlyMarketPageAkin();
         Login.login();
         page.signOutButton.click();
-        page.storeManager.click();
-        page.products.click();
+        ReusableMethods.jsScrollClick(page.storeManager);
+        ReusableMethods.jsScrollClick(page.products);
         page.addNewButton.click();
         ReusableMethods.jsScrollClick(page.EvVeYasam);
         Assert.assertTrue(page.EvVeYasam.isEnabled());

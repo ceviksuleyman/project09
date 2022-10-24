@@ -29,8 +29,8 @@ public class US006TC012 {//Kategori negatif test
         page = new PearlyMarketPageAkin();
         Login.login();
         page.signOutButton.click();
-        page.storeManager.click();
-        page.products.click();
+        ReusableMethods.jsScrollClick(page.storeManager);
+        ReusableMethods.jsScrollClick(page.products);
         page.addNewButton.click();
         js.executeScript("arguments[0].click();", page.fotoEkleme1);
         page.mediaLibrary.click();

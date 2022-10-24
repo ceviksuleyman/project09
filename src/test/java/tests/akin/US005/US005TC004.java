@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import pages.PearlyMarketPageAkin;
 import tests.methods.Login;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class US005TC004 {//Urun fotosu eklenebilmeli
     /*
@@ -25,8 +26,8 @@ public class US005TC004 {//Urun fotosu eklenebilmeli
         page = new PearlyMarketPageAkin();
         Login.login();
         page.signOutButton.click();
-        page.storeManager.click();
-        page.products.click();
+        ReusableMethods.jsScrollClick(page.storeManager);
+        ReusableMethods.jsScrollClick(page.products);
         page.addNewButton.click();
         page.fotoEkleme1.click();
         page.mediaLibrary.click();

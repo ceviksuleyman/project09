@@ -21,8 +21,8 @@ public class US006TC001 {//Besin takviyeleri kategorisini belirlenebilmeli
         page = new PearlyMarketPageAkin();
         Login.login();
         page.signOutButton.click();
-        page.storeManager.click();
-        page.products.click();
+        ReusableMethods.jsScrollClick(page.storeManager);
+        ReusableMethods.jsScrollClick(page.products);
         page.addNewButton.click();
         ReusableMethods.jsScrollClick(page.besinTakviyesi);
         Assert.assertTrue(page.besinTakviyesi.isEnabled());

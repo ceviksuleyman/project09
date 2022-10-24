@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.PearlyMarketPageAkin;
 import tests.methods.Login;
+import utilities.ReusableMethods;
 
 public class US005TC001 {//Products'ta urun listemi görmeliyim; status, stock, price, date
        /*
@@ -24,8 +25,8 @@ public class US005TC001 {//Products'ta urun listemi görmeliyim; status, stock, 
         page = new PearlyMarketPageAkin();
         Login.login();
         page.signOutButton.click();
-        page.storeManager.click();
-        page.products.click();
+        ReusableMethods.jsScrollClick(page.storeManager);
+        ReusableMethods.jsScrollClick(page.products);
         Assert.assertTrue(page.statusBaslik.isDisplayed()
                 && page.stockBaslik.isDisplayed()
                 && page.priceBaslik.isDisplayed()

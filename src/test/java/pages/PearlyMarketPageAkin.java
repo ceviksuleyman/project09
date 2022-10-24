@@ -82,7 +82,7 @@ public class PearlyMarketPageAkin {
     @FindBy(css = "a.login.logout.inline-type>i")
     public WebElement signOutButton;
 
-    @FindBy(xpath = "//div[@class='wcfm_menu_items wcfm_menu_wcfm-products']")
+    @FindBy(xpath = "(//*[@class='wcfm_menu_item '])[3]")
     public WebElement products;
     @FindBy(xpath = "//thead//tr/th[5]")
     public WebElement statusBaslik;

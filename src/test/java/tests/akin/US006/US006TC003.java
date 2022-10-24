@@ -21,8 +21,8 @@ public class US006TC003 {//Elektrik & Elektronik kategorisini belirlenebilmeli
         page = new PearlyMarketPageAkin();
         Login.login();
         page.signOutButton.click();
-        page.storeManager.click();
-        page.products.click();
+        ReusableMethods.jsScrollClick(page.storeManager);
+        ReusableMethods.jsScrollClick(page.products);
         page.addNewButton.click();
         ReusableMethods.jsScrollClick(page.elektrikElektronik);
         Assert.assertTrue(page.elektrikElektronik.isEnabled());

@@ -26,8 +26,8 @@ public class US005TC006 {//Urun fotosu ekleme Negatif Test
         page = new PearlyMarketPageAkin();
         Login.login();
         page.signOutButton.click();
-        page.storeManager.click();
-        page.products.click();
+        ReusableMethods.jsScrollClick(page.storeManager);
+        ReusableMethods.jsScrollClick(page.products);
         page.addNewButton.click();
         ReusableMethods.jsScrollClick(page.electronicsKategorisi);
         ReusableMethods.jsScrollClick(page.submitButton);

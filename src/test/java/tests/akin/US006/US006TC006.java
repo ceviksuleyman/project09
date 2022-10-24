@@ -21,8 +21,8 @@ public class US006TC006 {//Kitap & müzik &Film kategorisini belirlenebilmeli
         page = new PearlyMarketPageAkin();
         Login.login();
         page.signOutButton.click();
-        page.storeManager.click();
-        page.products.click();
+        ReusableMethods.jsScrollClick(page.storeManager);
+        ReusableMethods.jsScrollClick(page.products);
         page.addNewButton.click();
         ReusableMethods.jsScrollClick(page.KitapMüzikFilm);
         Assert.assertTrue(page.KitapMüzikFilm.isEnabled());
