@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.PearlyMarketPageAkin;
 import tests.methods.Login;
+import utilities.Driver;
 import utilities.ReusableMethods;
 import utilities.TestBaseRapor;
 
@@ -38,6 +39,7 @@ public class US005TC001 extends TestBaseRapor {//Products'ta urun listemi görme
                 && page.priceBaslik.isDisplayed()
                 && page.dateBaslik.isDisplayed());
         extentTest.pass("status, stock, price, date basliklari goruldu");
+        Driver.closeDriver();
 
     }
 }

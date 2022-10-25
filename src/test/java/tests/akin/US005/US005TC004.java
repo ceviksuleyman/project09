@@ -48,17 +48,8 @@ public class US005TC004 extends TestBaseRapor {//Urun fotosu eklenebilmeli
         page.fotoAddToGalleryButton.click();
         extentTest.info("Fotograflar eklendi");
         Assert.assertTrue(page.fotoEkleme1.isDisplayed() &&page.foto2Ekleme.isDisplayed());
-        extentTest.info("Urun fotosu eklendigi goruldu");
-
-
-
-
-
-
-
-
-
-
+        extentTest.pass("Urun fotosu eklendigi goruldu");
+        Driver.closeDriver();
 
 
     }

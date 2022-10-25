@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.PearlyMarketPageAkin;
 import tests.methods.Login;
+import utilities.Driver;
 import utilities.ReusableMethods;
 import utilities.TestBaseRapor;
 
@@ -33,7 +34,7 @@ public class US006TC001 extends TestBaseRapor {//Besin takviyeleri kategorisini 
         ReusableMethods.jsScrollClick(page.besinTakviyesi);
         extentTest.info("besinTakviyesi secildi");
         Assert.assertTrue(page.besinTakviyesi.isEnabled());
-        extentTest.info("besinTakviyesi secildigi goruldu");
-
+        extentTest.pass("besinTakviyesi secildigi goruldu");
+        Driver.closeDriver();
     }
 }

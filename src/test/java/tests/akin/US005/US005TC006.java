@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.PearlyMarketPageAkin;
 import tests.methods.Login;
+import utilities.Driver;
 import utilities.ReusableMethods;
 import utilities.TestBaseRapor;
 
@@ -22,6 +23,7 @@ public class US005TC006 extends TestBaseRapor {//Urun fotosu ekleme Negatif Test
                                uyarilarinin ciktigini gorur"
      */
     PearlyMarketPageAkin page;
+
     @Test
     public void US005TC006() throws IOException {
         extentTest = extentReports.createTest("Urun fotosu ekleme Negatif Test", "Negatif Test ");
@@ -40,11 +42,9 @@ public class US005TC006 extends TestBaseRapor {//Urun fotosu ekleme Negatif Test
         ReusableMethods.jsScrollClick(page.submitButton);
         extentTest.info("submit butonu tiklandi");
         Assert.assertTrue(page.uyariYazisiNegatifTest.isDisplayed());
-        extentTest.info("Uyari yazisi goruldu");
-        ReusableMethods.getScreenshotWebElement("negatifTest",page.uyariYazisiNegatifTest);
-
-
-
+        extentTest.pass("Uyari yazisi goruldu");
+        ReusableMethods.getScreenshotWebElement("negatifTest", page.uyariYazisiNegatifTest);
+        Driver.closeDriver();
 
 
     }

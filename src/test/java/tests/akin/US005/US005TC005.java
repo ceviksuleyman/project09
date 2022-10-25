@@ -73,8 +73,8 @@ public class US005TC005 extends TestBaseRapor {//Kisa tanımlama ve geniş tanı
         ReusableMethods.jsScrollClick(page.submitButton);
         ReusableMethods.waitForVisibility(page.tamamYazisi, 15);
         Assert.assertTrue(page.tamamYazisi.isDisplayed());
-        extentTest.info("tamam yazisi goruldu");
+        extentTest.pass("tamam yazisi goruldu");
         ReusableMethods.getScreenshotWebElement("ok", page.tamamYazisi);
-
+        Driver.closeDriver();
     }
 }

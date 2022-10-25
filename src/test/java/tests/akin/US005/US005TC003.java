@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.PearlyMarketPageAkin;
 import tests.methods.Login;
+import utilities.Driver;
 import utilities.ReusableMethods;
 import utilities.TestBaseRapor;
 
@@ -37,8 +38,8 @@ public class US005TC003 extends TestBaseRapor {//Urun ismi ekle  product title, 
         page.priceGirisi.sendKeys("800");
         extentTest.info("productTitle ve  price degeri girildi");
         Assert.assertTrue(page.productTitle.isDisplayed()&&page.priceGirisi.isDisplayed());
-        extentTest.info("Urun ismi   product title ve  satis Fiyati basarili olarak girildi");
-
+        extentTest.pass("Urun ismi   product title ve  satis Fiyati basarili olarak girildi");
+        Driver.closeDriver();
 
     }
 }
