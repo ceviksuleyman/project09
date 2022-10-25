@@ -1,13 +1,13 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="Negatif Testler">
-<test name="Nagatif Grup">
-    <groups>
-        <run>
-            <include name="negatif"/>
-        </run>
-    </groups>
-    <packages>
-        <package name="tests.suleyman.US_001"/>
-    </packages>
-</test>
+    <test name="Nagatif Grup">
+        <groups>
+            <run>
+                <include name="negatif"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="tests.suleyman.US_001"/>
+        </packages>
+    </test>
 </suite>
