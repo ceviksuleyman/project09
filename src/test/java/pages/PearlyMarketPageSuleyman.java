@@ -149,6 +149,10 @@ public class PearlyMarketPageSuleyman {
 
     @FindBy(css = "ul>li.delimiter")
     public WebElement trendingPage;
+    @FindBy(css = "ul>li.delimiter")
+    public WebElement newArrivalsPage;
+    @FindBy(css = "ul>li.delimiter")
+    public WebElement bestSellerPage;
 
     @FindBy(css = "select.orderby.form-control")
     public WebElement trendingDdm;
