@@ -18,7 +18,7 @@ public class US006TC010 extends TestBaseRapor {//Taki & aksesuar kategorisini be
      */
     PearlyMarketPageAkin page;
 
-    @Test
+    @Test(groups = "gp1")
     public void US006TC010() {
         extentTest = extentReports.createTest("TakiVeAksesuar kategorisini belirlenebilmeli", "TakiVeAksesuar ");
         page = new PearlyMarketPageAkin();

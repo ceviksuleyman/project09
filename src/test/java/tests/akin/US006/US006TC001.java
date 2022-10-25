@@ -18,7 +18,7 @@ public class US006TC001 extends TestBaseRapor {//Besin takviyeleri kategorisini 
      */
     PearlyMarketPageAkin page;
 
-    @Test
+    @Test(groups = "gp1")
     public void US006TC001() {
         extentTest = extentReports.createTest("Besin takviyeleri kategorisini belirlenebilmeli", "Besin takviyeleri ");
         page = new PearlyMarketPageAkin();

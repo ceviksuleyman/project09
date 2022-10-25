@@ -29,7 +29,7 @@ public class US005TC005 extends TestBaseRapor {//Kisa tanımlama ve geniş tanı
      */
     PearlyMarketPageAkin page;
 
-    @Test
+    @Test(groups = "gp1")
     public void US005TC005() throws InterruptedException, IOException {
         extentTest = extentReports.createTest("Kisa tanımlama ve geniş tanımlama", "tanımlama ");
 

@@ -18,7 +18,7 @@ public class US006TC011 extends TestBaseRapor {//Yeni ürünler kategorisini bel
      */
     PearlyMarketPageAkin page;
 
-    @Test
+    @Test(groups = "gp1")
     public void US006TC011() {
         extentTest = extentReports.createTest("YeniUrünler kategorisini belirlenebilmeli", "YeniUrünler ");
         page = new PearlyMarketPageAkin();

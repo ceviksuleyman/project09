@@ -18,7 +18,7 @@ public class US006TC008 extends TestBaseRapor {//Moda & Giyim kategorisini belir
      */
     PearlyMarketPageAkin page;
 
-    @Test
+    @Test(groups = "gp1")
     public void US006TC008() {
         extentTest = extentReports.createTest("Moda & Giyim kategorisini belirlenebilmeli", "Moda & Giyim ");
         page = new PearlyMarketPageAkin();

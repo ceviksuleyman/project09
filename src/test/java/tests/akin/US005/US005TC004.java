@@ -21,7 +21,7 @@ public class US005TC004 extends TestBaseRapor {//Urun fotosu eklenebilmeli
      */
     PearlyMarketPageAkin page;
 
-    @Test
+    @Test(groups = "gp1")
     public void US005TC004() throws InterruptedException {
 
         extentTest=extentReports.createTest("Urun fotosu ekleme","Urun fotosu ");

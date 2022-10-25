@@ -7,7 +7,6 @@ import tests.methods.Login;
 import utilities.Driver;
 import utilities.ReusableMethods;
 import utilities.TestBaseRapor;
-
 public class US005TC001 extends TestBaseRapor {//Products'ta urun listemi görmeliyim; status, stock, price, date
        /*
         1	Store Manager  https://pearlymarket.com/ adresine gider
@@ -22,7 +21,7 @@ public class US005TC001 extends TestBaseRapor {//Products'ta urun listemi görme
         */
     PearlyMarketPageAkin page;
 
-    @Test
+    @Test(groups = "gp1")
     public void US005TC001() {
         extentTest=extentReports.createTest("Products'ta urun listeleme","Products'ta urun listemi görmeliyim; status, stock, price, date");
 

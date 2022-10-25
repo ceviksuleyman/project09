@@ -16,7 +16,7 @@ public class US005TC002 extends TestBaseRapor {//Yeni urun ekle (Add new); urun 
     4	Store Manager urun icin virtual veya downloadable secenegi oldugunu gorur
      */
     PearlyMarketPageAkin page;
-    @Test
+    @Test(groups = "gp1")
     public void US005TC002() {
         extentTest=extentReports.createTest("Yeni urun ekle (Add new)","virtual veya downloadable secenekleri");
 

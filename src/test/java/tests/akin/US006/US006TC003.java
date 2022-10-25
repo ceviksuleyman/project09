@@ -18,7 +18,7 @@ public class US006TC003 extends TestBaseRapor {//Elektrik & Elektronik kategoris
      */
     PearlyMarketPageAkin page;
 
-    @Test
+    @Test(groups = "gp1")
     public void US006TC003() {
         extentTest = extentReports.createTest("Elektrik & Elektronik kategorisini belirlenebilmeli", "Cok satanlar ");
 

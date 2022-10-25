@@ -18,14 +18,15 @@ public class US007TC001 extends TestBaseRapor {//Elegant Auto group urunun brand
      5	Store Manager Elegant Auto group  brandi belirlendigi gorulur
      */
      PearlyMarketPageAkin page;
-    @Test
+    @Test(groups = "gp3")
     public void US007TC001() {
-        extentTest = extentReports.createTest("elegantAutoBrand brand'i belirlenebilmeli", "elegantAutoBrand ");
+        extentTest = extentReports.createTest("elegantAutoBrand brand belirlenebilmeli", "Besin takviyeleri ");
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
         page = new PearlyMarketPageAkin();
         Login.login();
         extentTest.info("Login olundu");
         page.signOutButton.click();
+        ReusableMethods.jsScrollClick(page.storeManager);
         extentTest.info("StoreManager 'a gidildi");
         ReusableMethods.jsScrollClick(page.products);
         extentTest.info("Products 'a gidildi");

@@ -18,7 +18,7 @@ public class US007TC007 extends TestBaseRapor {// Sterling urunun brandi belirle
     5	Store Manager  Sterling   brandi belirlendigi gorulur
      */
     PearlyMarketPageAkin page;
-    @Test
+    @Test(groups = "gp3")
     public void US007TC007() {
         extentTest = extentReports.createTest("Sterling brand'i belirlenebilmeli", "Sterling ");
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();

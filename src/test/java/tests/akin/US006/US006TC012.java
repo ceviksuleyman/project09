@@ -24,7 +24,7 @@ public class US006TC012 extends TestBaseRapor {//Kategori negatif test
      */
     PearlyMarketPageAkin page;
 
-    @Test
+    @Test(groups = "gp1")
     public void US006TC012() throws InterruptedException, IOException {
         extentTest = extentReports.createTest("Kategori negatif test", "Negatif test ");
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();

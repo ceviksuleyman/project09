@@ -24,7 +24,7 @@ public class US005TC006 extends TestBaseRapor {//Urun fotosu ekleme Negatif Test
      */
     PearlyMarketPageAkin page;
 
-    @Test
+    @Test(groups = "gp1")
     public void US005TC006() throws IOException {
         extentTest = extentReports.createTest("Urun fotosu ekleme Negatif Test", "Negatif Test ");
         page = new PearlyMarketPageAkin();

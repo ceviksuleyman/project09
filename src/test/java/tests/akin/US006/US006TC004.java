@@ -18,7 +18,7 @@ public class US006TC004 extends TestBaseRapor {//Ev & yasam kategorisini belirle
      */
     PearlyMarketPageAkin page;
 
-    @Test
+    @Test(groups = "gp1")
     public void US006TC004() {
         extentTest = extentReports.createTest("EvVeYasam kategorisini belirlenebilmeli", "EvVeYasam ");
         page = new PearlyMarketPageAkin();

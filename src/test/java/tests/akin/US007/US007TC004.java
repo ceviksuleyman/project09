@@ -18,7 +18,7 @@ public class US007TC004 extends TestBaseRapor {// NSB urunun brandi belirlenebil
     5	Store Manager   NS8   brandi belirlendigi gorulur
      */
     PearlyMarketPageAkin page;
-    @Test
+    @Test(groups = "gp3")
     public void US007TC004() {
         extentTest = extentReports.createTest("NS8 brand'i belirlenebilmeli", "NS8 ");
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();

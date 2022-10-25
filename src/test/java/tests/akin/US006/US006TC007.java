@@ -18,7 +18,7 @@ public class US006TC007 extends TestBaseRapor {//Kozmetik & kisisel kategorisini
      */
     PearlyMarketPageAkin page;
 
-    @Test
+    @Test(groups = "gp1")
     public void US006TC007() {
         extentTest = extentReports.createTest("Kozmetik & kisisel kategorisini belirlenebilmeli", "Kozmetik & kisisel ");
         page = new PearlyMarketPageAkin();

@@ -18,7 +18,7 @@ public class US007TC003 extends TestBaseRapor {//  NodeJS urunun brandi belirlen
     5	Store Manager   NodeJS   brandi belirlendigi gorulur
      */
     PearlyMarketPageAkin page;
-    @Test
+    @Test(groups = "gp3")
     public void US007TC003() {
         extentTest = extentReports.createTest("nodeJSbrand'i belirlenebilmeli", "nodeJS ");
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();

@@ -18,7 +18,7 @@ public class US007TC006 extends TestBaseRapor {//  SkySuite Tech urunun brandi b
     5	Store Manager  SkySuite Tech   brandi belirlendigi gorulur
      */
     PearlyMarketPageAkin page;
-    @Test
+    @Test(groups = "gp3")
     public void US007TC006() {
         extentTest = extentReports.createTest("SkySuite brand'i belirlenebilmeli", "SkySuite ");
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();

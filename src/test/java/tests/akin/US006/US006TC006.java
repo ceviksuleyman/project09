@@ -18,7 +18,7 @@ public class US006TC006 extends TestBaseRapor {//Kitap & müzik &Film kategorisi
      */
     PearlyMarketPageAkin page;
 
-    @Test
+    @Test(groups = "gp1")
     public void US006TC006() {
         extentTest = extentReports.createTest("KitapMüzikFilm kategorisini belirlenebilmeli", "KitapMüzikFilm ");
         page = new PearlyMarketPageAkin();

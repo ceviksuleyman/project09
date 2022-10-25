@@ -18,7 +18,7 @@ public class US007TC002 extends TestBaseRapor {// Green Grass urunun brandi beli
     5	Store Manager  Green Grass   brandi belirlendigi gorulur
      */
     PearlyMarketPageAkin page;
-    @Test
+    @Test(groups = "gp3")
     public void US007TC002() {
         extentTest = extentReports.createTest("Green Grass brand'i belirlenebilmeli", "Green Grass ");
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();

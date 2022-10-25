@@ -21,7 +21,7 @@ public class US007TC008 extends TestBaseRapor  {// Brand Negatif Test
     8	Store Manager "Please insert Product Title before submit." yazisini gorur
      */
     PearlyMarketPageAkin page;
-    @Test
+    @Test(groups = "gp3")
     public void US007TC008() throws InterruptedException {
         extentTest = extentReports.createTest("Brand Negatif Test'i belirlenebilmeli", "Negatif Test ");
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();

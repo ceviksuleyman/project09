@@ -19,7 +19,7 @@ public class US005TC003 extends TestBaseRapor {//Urun ismi ekle  product title, 
 
      */
     PearlyMarketPageAkin page;
-    @Test
+    @Test(groups = "gp1")
     public void US005TC003() {
 
         extentTest=extentReports.createTest("Urun ismi   product title ve  satis Fiyati","Urun ismi   product title ve  satis Fiyati girilmeli");

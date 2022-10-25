@@ -18,7 +18,7 @@ public class US006TC002 extends TestBaseRapor {//Cok satanlar kategorisini belir
      */
     PearlyMarketPageAkin page;
 
-    @Test
+    @Test(groups = "gp1")
     public void US006TC002() {
         extentTest = extentReports.createTest("Cok satanlar kategorisini belirlenebilmeli", "Cok satanlar ");
         page = new PearlyMarketPageAkin();

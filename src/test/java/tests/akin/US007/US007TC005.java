@@ -18,7 +18,7 @@ public class US007TC005 extends TestBaseRapor {// RED urunun brandi belirlenebil
     5	Store Manager RED   brandi belirlendigi gorulur
      */
     PearlyMarketPageAkin page;
-    @Test
+    @Test(groups = "gp3")
     public void US007TC005() {
         extentTest = extentReports.createTest("RED brand'i belirlenebilmeli", "RED ");
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
