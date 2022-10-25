@@ -8,6 +8,7 @@
         </groups>
         <packages>
             <package name="tests.suleyman.US_001"/>
+            <package name="tests.suleyman.US_002"/>
         </packages>
     </test>
 </suite>
