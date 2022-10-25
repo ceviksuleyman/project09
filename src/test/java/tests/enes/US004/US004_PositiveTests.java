@@ -1,9 +1,9 @@
-package tests.enes.us004;
+package tests.enes.US004;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.PearlyMarketPageEnes;
-import tests.enes.Login;
+import tests.methods.Login;
 import utilities.Driver;
 import utilities.ReusableMethods;
 import utilities.TestBaseRapor;

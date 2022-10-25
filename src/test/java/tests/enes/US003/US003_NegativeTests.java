@@ -1,10 +1,10 @@
-package tests.enes.us003;
+package tests.enes.US003;
 
 import com.github.javafaker.Faker;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.PearlyMarketPageEnes;
-import tests.enes.Login;
+import tests.methods.Login;
 import utilities.Driver;
 import utilities.ReusableMethods;
 import utilities.TestBaseRapor;
