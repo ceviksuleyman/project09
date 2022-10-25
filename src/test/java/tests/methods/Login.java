@@ -13,8 +13,8 @@ public class Login {
         page = new PearlyMarketPage();
         Driver.getDriver().get(ConfigReader.getProperty("projeUrl"));
         page.ilkSignIn.click();
-        page.emailBox.sendKeys(ConfigReader.getProperty("projeEmail"));
-        page.passwordBox.sendKeys(ConfigReader.getProperty("projePassword"));
+        page.emailBox.sendKeys(ConfigReader.getProperty("vendorEmail"));
+        page.passwordBox.sendKeys(ConfigReader.getProperty("vendorSifre"));
         page.ikinciSignIn.click();
     }
 }
