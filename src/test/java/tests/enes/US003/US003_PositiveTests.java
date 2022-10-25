@@ -62,7 +62,7 @@ public class US003_PositiveTests extends TestBaseRapor {
 
             extentTest.info("Urun sayfasinda 5 tane urunu sepete eklenir.");
 
-            if (Integer.parseInt(market.cartCount.getText()) == 5) {
+            if (Integer.parseInt(market.cartCount.getText()) >= 5) {
                 break;
             }
         }

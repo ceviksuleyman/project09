@@ -58,7 +58,7 @@ public class US003_NegativeTests extends TestBaseRapor {
 
             extentTest.info("Urun sayfasinda 5 tane urunu sepete eklenir.");
 
-            if (Integer.parseInt(market.cartCount.getText()) == 1) {
+            if (Integer.parseInt(market.cartCount.getText()) >= 1) {
                 extentTest.info("Urun sayfasinda 1 tane urunu sepete eklemistir.");
                 break;
             }

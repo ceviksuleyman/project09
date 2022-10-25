@@ -52,14 +52,12 @@ public class US004_PositiveTests extends TestBaseRapor {
             }
 
 
-
-            if (Integer.parseInt(market.cartCount.getText()) == 5) {
+            if (Integer.parseInt(market.cartCount.getText()) >= 5) {
                 break;
             }
         }
 
         extentTest.info("vendor urun sayfasinda 5 tane urunu sepete eklendi.");
-
 
 
         // 7. vendor sepet butonuna tikla.
@@ -220,7 +218,7 @@ public class US004_PositiveTests extends TestBaseRapor {
 
         ReusableMethods.jsScrollClick(market.clearCart);
 
-        ReusableMethods.waitForVisibility(market.clearMessage,10);
+        ReusableMethods.waitForVisibility(market.clearMessage, 10);
 
         Assert.assertTrue(market.clearMessage.isDisplayed());
 
