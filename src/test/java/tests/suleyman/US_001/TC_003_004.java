@@ -32,7 +32,7 @@ public class TC_003_004 extends TestBaseRapor {
 
     PearlyMarketPageSuleyman page;
 
-    @Test(groups = "negatif")
+    @Test//(groups = "negatif")
     public void US001_TC003() {
 
         page = new PearlyMarketPageSuleyman();
