@@ -7,8 +7,8 @@
             </run>
         </groups>
         <packages>
-            <package name="tests.suleyman.US_001"/>
-            <package name="tests.suleyman.US_002"/>
+            <package name="tests.US001"/>
+            <package name="tests.US002"/>
         </packages>
     </test>
 </suite>

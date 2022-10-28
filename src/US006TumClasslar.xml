@@ -2,7 +2,7 @@
 <suite name="allTests">
     <test name="regression">
         <packages>
-            <package name="tests.akin.US006"/>
+            <package name="tests.US006"/>
         </packages>
     </test>
 </suite>

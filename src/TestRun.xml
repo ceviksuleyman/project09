@@ -2,14 +2,14 @@
 <suite name="Istenen Class'lari Calistir">
     <test name="Class">
         <classes>
-            <class name="tests.suleyman.US_001.TC_011"/>
-            <class name="tests.suleyman.US_002.TC_001"/>
+            <class name="tests.US001.TC_011"/>
+            <class name="tests.US001.TC_010"/>
         </classes>
     </test>
 
     <test name="Package">
         <packages>
-            <package name="tests.suleyman.US_022"/>
+            <package name="tests.US001"/>
         </packages>
     </test>
 </suite>
